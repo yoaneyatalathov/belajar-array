@@ -1,9 +1,11 @@
-let flavors = ["vanilla", "butterscotch", "lavender", "chocolate", "cookie dough"];
+let scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69,
+              34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61,
+              46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44];
 
-let flavorOfTheDay = flavors[2];
-
-flavors[3] = "vanilla chocolate chip";
-console.log(flavors);
-
-let numFlavors = flavors.length;
-console.log(numFlavors);
+let output;
+let i = 0;
+while (i < scores.length) {
+    output = "Bubble solution #" + i + " score : " + scores[i];
+    console.log(output);
+    i = i + 1;
+}
