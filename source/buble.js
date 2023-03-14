@@ -13,3 +13,11 @@ for (var i = 0; i < scores.length; i++) {
 }
 console.log("Bubbles test: " + scores.length);
 console.log("Highest bubble score: " + highScore);
+
+let bestSolution = [];
+for (var i = 0; i < scores.length; i++) {
+    if (scores[i] == highScore) {
+        bestSolution.push(i)
+    }
+}
+console.log("Solutions with highest score: " + bestSolution);
